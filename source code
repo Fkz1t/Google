@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="icon" href="https://www.google.com/favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .logo {
+            margin-top: 100px;
+        }
+        .search-box {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 500px;
+            height: 40px;
+            font-size: 18px;
+            padding: 0 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            height: 36px;
+            margin: 5px;
+            padding: 0 20px;
+            font-size: 14px;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            border: 1px solid #c6c6c6;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google Logo">
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search Google or type a URL">
+    </div>
+
+    <div class="buttons">
+        <button onclick="fakeSearch()">Google Search</button>
+        <button onclick="fakeSearch()">I'm Feeling Lucky</button>
+    </div>
+
+    <div class="message" id="message">
+        Oops! Something went wrong. Try again later.
+    </div>
+
+    <script>
+        function fakeSearch() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
